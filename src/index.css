@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  box-sizing: border-box;
+  background-color: #000003;
+  color: white;
+  font-family: "Exo 2";
+}
+
+#root {
+  max-width: none;
+  padding: 0;
+}
+
+.short {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.HomeDiv {
+  position: relative;
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  line-height: 82px;
+}
+
+.noAbs {
+  position: static;
+  transform: translate(0, 0);
+}
+
+.lastElem {
+  font-size: 35px;
+  margin-bottom: 85px;
+}
+
+.changeText {
+  font-family: "Kaushan Script";
+}
+
+.textSpanColor {
+  color: #42627d;
+}
+
+.bgEarth {
+  margin-top: 350px;
+  scale: 2;
+  opacity: 0.5;
+}
+
+button {
+  background-color: #050e18;
+  color: white;
+  border-radius: 10px;
+  padding: 16px 40px;
+  font-size: 24px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #050e18;
+  border: 2px solid #42627d;
+}
+
+.containerChart {
+  display: flex;
+  justify-content: center;
+}
+
+.containerChPage {
+  margin: 45px;
+}
+
+.errorPage {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1300px) {
+  h1,
+  .noAbs {
+    font-size: 65px;
+    line-height: 60px;
+  }
+  .HomeDiv {
+    height: 700px;
+  }
+  .bgEarth {
+    scale: 1.8;
+  }
+  .short {
+    margin: 0px 25px;
+  }
+  .button {
+    font-size: 10px;
+  }
+}
+@media (max-width: 660px) {
+  h1,
+  .noAbs {
+    font-size: 42px;
+    line-height: 45px;
+  }
+  .HomeDiv {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    top: 50%;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .noAbs {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .HomeDiv {
+    height: 550px;
+  }
+}

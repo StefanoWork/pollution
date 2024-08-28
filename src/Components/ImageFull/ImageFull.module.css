@@ -1,0 +1,45 @@
+.sectionImg {
+  position: relative;
+  overflow: hidden;
+}
+
+.fullImg {
+  width: 130%;
+  height: 950px;
+  object-fit: cover;
+  margin-left: -400px;
+}
+
+.titleImg {
+  font-size: 110px;
+  position: absolute;
+  top: 20%;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  line-height: 105px;
+}
+
+.changeText {
+  font-family: "Kaushan Script";
+}
+
+@media (max-width: 1000px) {
+  .fullImg {
+    margin-left: 0;
+  }
+  .titleImg {
+    font-size: 85px;
+    line-height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .titleImg {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .fullImg {
+    height: 650px;
+  }
+}

@@ -1,0 +1,16 @@
+.footer {
+  height: 100px;
+  background-color: #42627d;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: 70px;
+  }
+  .pFooter {
+    font-size: 13px;
+  }
+}

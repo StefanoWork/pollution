@@ -1,0 +1,123 @@
+.sectionT {
+  margin-top: 180px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
+.titleSection {
+  font-size: 68px;
+  text-align: center;
+  line-height: 62px;
+  margin: 0;
+}
+
+.changeText {
+  font-family: "Kaushan Script";
+  color: #42627d;
+}
+
+.chartText {
+  display: flex;
+  margin-top: 55px;
+}
+
+.subtitle {
+  font-size: 24px;
+  text-align: left;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.bt {
+  margin: 85px 0px 0px 0px;
+  width: 450px;
+}
+
+.divDx {
+  display: flex;
+  flex-direction: column;
+  margin-left: 95px;
+  width: 950px;
+}
+.bigChart {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000003;
+  padding: 18px;
+  border-radius: 15px;
+  border: 2px solid #42627d;
+  width: 100%;
+}
+
+.noShow {
+  border-radius: 100%;
+  background-color: #42627d;
+  position: absolute;
+  top: -5%;
+  right: -3%;
+  height: 80px;
+  width: 80px;
+  z-index: 4;
+  font-size: 40px;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .sectionT {
+    margin-top: 0px;
+  }
+  .line {
+    margin-top: 40px;
+  }
+  .chartText {
+    flex-direction: column;
+    align-content: center;
+  }
+  .chartContainer {
+    margin-right: 30px;
+  }
+  .bt {
+    display: none;
+  }
+  .divDx {
+    width: 100%;
+    margin: 0;
+  }
+  .subtitle {
+    margin: 25px 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .titleSection {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titleSection {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .sectionT {
+    margin-top: 0px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}

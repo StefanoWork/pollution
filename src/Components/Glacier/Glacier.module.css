@@ -1,0 +1,99 @@
+.secGlacier {
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 25px;
+  margin-top: 55px;
+}
+
+.changeText {
+  font-family: "Kaushan Script";
+  color: #42627d;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.titleSection {
+  font-size: 68px;
+  text-align: center;
+  line-height: 62px;
+}
+
+.img1,
+.img2 {
+  height: 900px;
+}
+
+.btGlacier {
+  width: 60%;
+  margin: 55px 0px;
+}
+
+.bigChart {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000003;
+  padding: 18px;
+  border-radius: 15px;
+  border: 2px solid #42627d;
+  width: 100%;
+}
+
+.noShow {
+  border-radius: 100%;
+  background-color: #42627d;
+  position: absolute;
+  top: -5%;
+  right: -3%;
+  height: 80px;
+  width: 80px;
+  z-index: 4;
+  font-size: 40px;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .btGlacier {
+    display: none;
+  }
+  .containerImg {
+    margin-bottom: 75px;
+    justify-content: space-around;
+  }
+  .img1,
+  .img2 {
+    height: 550px;
+  }
+  .titleSection {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 660px) {
+  .titleSection {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .containerImg {
+    flex-direction: column;
+  }
+  .img1,
+  .img2 {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+}
